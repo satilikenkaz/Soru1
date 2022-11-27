@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/titresim"
+        android:layout_width="177dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="4dp"
+        android:text="Titreşim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="68dp"
+        android:text="KAYDET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/maxt"
+        android:layout_width="177dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="Max Büyüklük"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/mint"
+        app:layout_constraintEnd_toStartOf="@+id/maxarti"
+        app:layout_constraintStart_toEndOf="@+id/maxeksi"
+        app:layout_constraintTop_toBottomOf="@+id/titresim"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/mint"
+        android:layout_width="176dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="33dp"
+        android:ems="10"
+        android:hint="Min Büyüklük"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toStartOf="@+id/minarti"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mineksi"
+        app:layout_constraintTop_toBottomOf="@+id/maxt" />
+
+    <Button
+        android:id="@+id/maxeksi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/mineksi"
+        app:layout_constraintEnd_toStartOf="@+id/maxt"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titresim"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/maxarti"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/minarti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/maxt"
+        app:layout_constraintTop_toBottomOf="@+id/titresim"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <Button
+        android:id="@+id/mineksi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="37dp"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxeksi" />
+
+    <Button
+        android:id="@+id/minarti"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="28dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxarti" />
+
+    <CheckBox
+        android:id="@+id/ses"
+        android:layout_width="98dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="28dp"
+        android:text="Ses"
+        app:layout_constraintBottom_toTopOf="@+id/maxt"
+        app:layout_constraintEnd_toStartOf="@+id/titresim"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
